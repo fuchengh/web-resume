@@ -1,2 +1,2 @@
-# portfolio-simple
-resume style portfolio
+# Web resume
+Resume style portfolio
