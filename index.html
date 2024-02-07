@@ -11,28 +11,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <title>Fucheng Hsieh</title>
     <style>
         .name {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: #166bec;
         }
 
-        .icon {
-            margin: 0.2rem;
-            color: #1483f3;
+        .h1-style {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500 !important;
         }
 
-        .icon:hover {
-            color: #2b5f9a;
-            transition: .5s;
+        li {
+            font-size: 0.9rem;
         }
 
+        .fa {
+            margin: 0.3rem;
+            color: #2c8efa;
+            font-size: 24px !important;
+            transition: .3s ease-in-out;
+        }
+
+        .fa:hover {
+            color: #223780;
+        }
+
+        .time-and-location {
+            text-align: right;
+        }
+
+        .education,
         .company {
-            font-family: 'Lato', sans-serif;
-            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
             font-size: 1.1rem;
         }
 
@@ -42,35 +59,42 @@
         }
 
         .project {
-            font-family: 'Roboto Mono', sans-serif;
-            font-size: 1rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9rem;
             font-weight: 500;
         }
 
-        .project-link {
+        .project-link,
+        .content-link {
             color: #4a4a4a;
-            text-decoration: underline 0.1rem;
+            text-decoration: underline 0.09rem;
             text-underline-offset: 0.2rem;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 500;
+            transition: .3s ease-in-out;
         }
-        
-        .project-link:hover {
-            color: #1483f3;
-            transition: .5s;
+
+        .project-link:hover,
+        .content-link:hover {
+            color: #2c8efa;
         }
 
         .skill {
-            margin-left: 0.2rem;
+            margin-left: 0.5rem;
+            font-size: 0.85rem;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 500;
+            color: #2c8efa;
+        }
+
+        .skill-list {
             font-size: 0.9rem;
-            font-family: 'Roboto Mono', sans-serif;
-            font-weight: 600;
-            color: #1483f3;
+            font-family: 'Roboto Mono', monospace;
         }
     </style>
 </head>
 
-<body id="pdf" style="font-family: 'Roboto', sans-serif; font-weight: 400; background: #f8f8f8;">
+<body style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 0.85rem; background: #f8f8f8;">
     <div class="columns" style="padding:2.5rem"></div>
     <div class="column is-8 is-offset-2">
         <div class="level content is-marginless">
@@ -87,38 +111,42 @@
 
         <div class="content">
             <span class="heading">
-                <h1>Education</h1>
+                <h1 class="h1-style">Education</h1>
             </span>
 
             <div class="level">
-                <p class="is-marginless" style="font-size: 1.2rem; font-family: Lato, sans-serif;">University of California,
-                    Irvine<br /><span class="content is-marginless" style="font-size: 0.9rem">MS, Computer Science</p>
-                <p style="text-align: right; font-size: 0.9rem">Irvine, CA<br /><span
-                        class="content is-marginless">Sept. 2021 - Mar. 2023</span></p>
+                <p class="is-marginless education">University of California,
+                    Irvine<br /><span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500;">MS,
+                        Computer Science
+                </p>
+                <p class="time-and-location">Irvine, CA<br /><span class="content is-marginless">Sept. 2021 - Mar.
+                        2023</span></p>
             </div>
             <div class="level">
-                <p class="is-marginless" style="font-size: 1.2rem; font-family: Lato, sans-serif;">National Chiao Tung
-                    University<br /><span class="content is-marginless" style="font-size: 0.9rem">BS, Computer Science</p>
-                <p style="text-align: right; font-size: 0.9rem">Hsinchu, Taiwan<br /><span
-                        class="content is-marginless">Sept. 2016 - Jun. 2020</span></p>
+                <p class="is-marginless education">National Chiao Tung
+                    University<br /><span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500">BS,
+                        Computer Science
+                </p>
+                <p class="time-and-location">Hsinchu, Taiwan<br /><span class="content is-marginless">Sept. 2016 - Jun.
+                        2020</span></p>
             </div>
         </div>
         <hr class="solid">
 
         <div class="content">
             <span class="heading">
-                <h1>Work Experience</h1>
+                <h1 class="h1-style">Work Experience</h1>
             </span>
 
             <div class="level is-marginless">
                 <p class="heading is-marginless company">Nokia<br /><span
                         class="content is-marginless job-title">Software
                         Engineer</span></p>
-                <p style="text-align: right; font-size: 0.9rem">Sunnyvale, CA<br /><span
-                        class="content is-marginless">Jul. 2023 - Present</span></p>
+                <p class="time-and-location">Sunnyvale, CA<br /><span class="content is-marginless">Jul. 2023 -
+                        Present</span></p>
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         SRv6 CLI Backend
                         <span class="skill">C C++</span>
@@ -126,7 +154,7 @@
                     Built the CLI and backend support for enabling upcoming SRv6 features for Nokia router.
                 </li>
 
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         I-PMSI interop with Cisco controller
                         <span class="skill">C</span>
@@ -139,12 +167,12 @@
             <div class="level is-marginless">
                 <p class="heading is-marginless company">IBM<br /><span class="content is-marginless job-title">Software
                         Engineer Intern</span></p>
-                <p style="text-align: right; font-size: 0.9rem">San Jose, CA<br /><span
-                        class="content is-marginless">Jul. 2022 - Sept. 2022</span></p>
+                <p class="time-and-location">San Jose, CA<br /><span class="content is-marginless">Jul. 2022 - Sept.
+                        2022</span></p>
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
 
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         React App Development
                         <span class="skill">React TypeScript Cypress Enzyme</span>
@@ -154,7 +182,7 @@
                     Enhanced test coverage for multiple components by 50% with Enzyme and Cypress framework.
                 </li>
 
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         Multi-label selector
                         <span class="skill">React TypeScript</span>
@@ -164,7 +192,7 @@
                     Facilitated seamless communication with the backend for efficient AI model inference.
                 </li>
 
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         Agile Development
                         <span class="skill">Jira</span>
@@ -177,11 +205,11 @@
             <div class="level is-marginless">
                 <p class="heading is-marginless company">NEMS Lab, NCTU<br /><span
                         class="content is-marginless job-title">Research Assistant</span></p>
-                <p style="text-align: right; font-size: 0.9rem">Hsinchu, Taiwan<br /><span
-                        class="content is-marginless">Aug. 2020 - Aug. 2021</span></p>
+                <p class="time-and-location">Hsinchu, Taiwan<br /><span class="content is-marginless">Aug. 2020 - Aug.
+                        2021</span></p>
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         Multi-access Edge Computing Platform
                         <span class="skill">C C++</span>
@@ -190,7 +218,7 @@
                     networks in C and C++, resulting in a <b>25% reduction in CPU usage.</b>
                 </li>
 
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         Cellular Research Work
                         <span class="skill">C C++ Wireshark</span>
@@ -198,10 +226,12 @@
                     Conducted experiments on identifying vulnerabilities in Mobile-IoT devices using C, C++, and
                     Wireshark.
                     Contributed to a research paper on enabling traffic shaping in MEC platforms, leading to paper
-                    acceptance at <b>MobiCom'21 and CCNC'22</b>.
+                    acceptance at <a href="https://dl.acm.org/doi/10.1145/3447993.3483239" target="_blank"
+                        class="content-link">MobiCom'21</a> and <a href="https://dl.acm.org/doi/10.1109/CCNC49033.2022.9700715"
+                        target="_blank" class="content-link">CCNC'22</a>.
                 </li>
 
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         Fault tolerance Mesh Systems
                         <span class="skill">BASH Python Docker</span>
@@ -215,27 +245,26 @@
 
         <div class="content">
             <span class="heading">
-                <h1>Projects</h1>
+                <h1 class="h1-style">Projects</h1>
             </span>
 
             <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
-                <a href="https://github.com/fchsieh/HPC-Accelerators" target="_blank"
-                    class="project-link">HPC Accelerators</a>
+                <a href="https://github.com/fchsieh/HPC-Accelerators" target="_blank" class="project-link">HPC
+                    Accelerators</a>
                 <span class="skill">C++ Bluespec</span>
             </p>
             <ul style="margin-top: 0.3rem; list-style-type: circle;">
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     Developed a thermal simulation accelerator using C++ and
                     optimization techniques, including SIMD vectorization and multithreading. Successfully
                     <b>reduced cache misses by 30%</b>, resulting in an
                     exceptional
                     <b>140x</b> execution time boost, earning a <b>Top 5 position</b> in the competition.
                 </li>
-                <li class="content is-marginless" style="font-size: 0.9rem">
+                <li class="content is-marginless">
                     Implemented a cutting-edge, highly parallelized Convolution Neural Network
                     (CNN) accelerator using Bluespec (HDL) for image processing. Achieved an impressive <b>20x</b>
-                    faster
-                    performance compared to traditional CPUs.
+                    faster performance compared to traditional CPUs.
                 </li>
             </ul>
             <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
@@ -243,14 +272,13 @@
                 <span class="skill">Golang Python React Docker</span>
             </p>
             <ul style="margin-top: 0.3rem; list-style-type: circle;">
-                <li class="content is-marginless" style="font-size: 0.9rem">Developed a robust web application using
+                <li class="content is-marginless">Developed a robust web application using
                     Python for scraping job postings from
                     diverse websites, Golang for the API server, and React for the frontend.</li>
-                <li class="content is-marginless" style="font-size: 0.9rem"> Utilized Docker for containerization and
-                    deployed the application with Kubernetes, incorporating
-                    load
-                    balancing for enhanced scalability and reliability.</li>
-                <li class="content is-marginless" style="font-size: 0.9rem">Designed the Go server to dynamically
+                <li class="content is-marginless"> Utilized Docker for containerization and
+                    deployed the application with docker-compose, incorporating
+                    load balancing for enhanced scalability and reliability.</li>
+                <li class="content is-marginless">Designed the Go server to dynamically
                     interact with MongoDB and Firebase, ensuring efficient
                     fetching of new data as needed.</li>
             </ul>
@@ -259,11 +287,11 @@
                 <span class="skill">Rust Bluetooth</span>
             </p>
             <ul style="margin-top: 0.3rem; list-style-type: circle;">
-                <li class="content is-marginless" style="font-size: 0.9rem">Designed and successfully launched
+                <li class="content is-marginless">Designed and successfully launched
                     BlueSense, a robust device tracking application. Utilized Rust programming language and harnessed
                     the power of the Bluetooth Low Energy protocol to achieve precise and real-time device detection.
                 </li>
-                <li class="content is-marginless" style="font-size: 0.9rem">Implemented an Least Recently Used (LRU)
+                <li class="content is-marginless">Implemented an Least Recently Used (LRU)
                     cache strategy to optimize data storage, significantly improving the overall performance of the
                     device tracking app. </li>
             </ul>
@@ -272,16 +300,16 @@
 
         <div class="content">
             <span class="heading">
-                <h1>Skills</h1>
+                <h1 class="h1-style">Skills</h1>
             </span>
             <p class="heading is-marginless project">Languages and frameworks</p>
-            <p style="font-size: 0.9rem;font-family: 'Roboto Mono', sans-serif;">
-                C/C++ Python JavaScript Golang Rust React Node.js
+            <p class="skill-list">
+                C/C++, Python, JavaScript, Golang, Rust, React, Node.js
             </p>
 
             <p class=" heading is-marginless project">Technologies</p>
-            <p style="font-size: 0.9rem;font-family: 'Roboto Mono', sans-serif;">
-                Git Docker Kubernetes Cypress BLE
+            <p class="skill-list">
+                Git, Docker, Kubernetes, BLE, Unit testing, System Admin, Firebase, MongoDB
             </p>
         </div>
 
