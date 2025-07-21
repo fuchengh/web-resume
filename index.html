@@ -100,11 +100,11 @@
         <div class="level content is-marginless">
             <p class="title is-2 name">Fucheng Hsieh</p>
             <p class="subtitle is-5">
-                <a href="mailto:fhsieh@uci.edu" class="icon"><i class="fa fa-envelope-square"
+                <a href="mailto:fucheng.hsieh@gmail.com" class="icon"><i class="fa fa-envelope-square"
                         aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/freddiehsieh/" class="icon"><i class="fa fa-linkedin-square"
                         aria-hidden="true"></i></a>
-                <a href="https://github.com/fchsieh" class="icon"><i class="fa fa-github-square"
+                <a href="https://github.com/fuchengh" class="icon"><i class="fa fa-github-square"
                         aria-hidden="true"></i></a>
             </p>
         </div>
@@ -115,17 +115,24 @@
             </span>
 
             <div class="level">
-                <p class="is-marginless education">University of California,
-                    Irvine<br /><span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500;">MS,
-                        Computer Science
+                <p class="is-marginless education">University of California, Irvine
+                    <br />
+                    <span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500;">MS, Computer Science
                 </p>
                 <p class="time-and-location">Irvine, CA<br /><span class="content is-marginless">Sept. 2021 - Mar.
                         2023</span></p>
             </div>
             <div class="level">
-                <p class="is-marginless education">National Chiao Tung
-                    University<br /><span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500">BS,
-                        Computer Science
+                <p class="is-marginless education">National Chiao Tung University
+                    <br />
+                    <span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500">BS,
+                        Computer Science</span>
+                    <br />
+                    <span class="content is-marginless" style="font-size: 0.8rem; font-weight: 400;">
+                        Graduate Teaching Assistant, Linux System Administration
+                        <br/>
+                        Instructed and mentored 100+ students in advanced system administration and Linux best practices.
+                    </span>
                 </p>
                 <p class="time-and-location">Hsinchu, Taiwan<br /><span class="content is-marginless">Sept. 2016 - Jun.
                         2020</span></p>
@@ -148,19 +155,26 @@
             <ul style="margin-top: 0.2em; list-style-type: circle;">
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
-                        TreeSID SRv6 Backend
-                        <span class="skill">C C++</span>
+                        MSDP to SR Linux Migration
+                        <span class="skill">C C++ YANG</span>
                     </span>
-                    Implemented backend support for TreeSID SRv6 protocol, including CLI/MD-CLI and yang models.
+                    Ported legacy C/C++ MSDP SROS code to SR Linux, using POSIX message-queues and Google Protobuf interfaces; built the MSDP Manager CLI & configuration database with 94% line/95% function test coverage.
                 </li>
 
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
-                        I-PMSI interop with Cisco controller
+                        TREE-SID SRv6 Integration
                         <span class="skill">C C++ YANG</span>
                     </span>
-                    Implemented the I-PMSI CLI, controlling the suppression of I-PMSI and S-PMSI communication
-                    between Nokia router and Cisco controller in the context of MVPN networks.
+                    Integrated TREE-SID SRv6 control plane with existing PIM tunnels via "end-to-end" CLI-to-database workflow; introduced a transactional tunnel-request database that synchronizes active/standby control planes, eliminating a "long-standing" switchover-crash bug.
+                </li>
+
+                <li class="content is-marginless">
+                    <span class="heading is-marginless project">
+                        BIER MPLS common-label support
+                        <span class="skill">C C++ YANG</span>
+                    </span>
+                    Implemented CLI and label allocation database to assign unique service MPLS-labels per VPRN and propagate labels through PIM tunnels, enabling scalable MVPN BIER deployments.
                 </li>
             </ul>
 
@@ -171,34 +185,19 @@
                         2022</span></p>
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
-
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
-                        React App Development
-                        <span class="skill">React TypeScript Cypress Enzyme</span>
-                    </span>
-                    Contributed significantly to the advancement of Watson Discovery, developing 8 key components and
-                    resolving 10 critical issues.
-                    Enhanced test coverage for multiple components by 50% with Enzyme and Cypress framework.
+                        Multi-label selector for AI
+                        <span class="skill">React TypeScript</span>
+                    </span>Designed and implemented a TypeScript-based React multi-label selector app to curate datasets for Watson AI model training, streamlining data filtering and selection tasks.
                 </li>
 
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
-                        Multi-label selector
+                        Automated Testing
                         <span class="skill">React TypeScript</span>
                     </span>
-                    Architected a sophisticated label selector for Watson Discovery, streamlining user interactions for
-                    multiple selections.
-                    Facilitated seamless communication with the backend for efficient AI model inference.
-                </li>
-
-                <li class="content is-marginless">
-                    <span class="heading is-marginless project">
-                        Agile Development
-                        <span class="skill">Jira</span>
-                    </span>
-                    Actively participated in stand-up and scrum meetings, contributing to issue resolution and the
-                    successful implementation of new features.
+                    Wrote comprehensive unit and end-to-end tests (Enzyme, Cypress), boosted automated test coverage and cut critical pre-release regressions by ~50% function coverage.
                 </li>
             </ul>
 
@@ -211,34 +210,25 @@
             <ul style="margin-top: 0.2em; list-style-type: circle;">
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
-                        Multi-access Edge Computing Platform
+                        High Performance 4G/LTE Packet Dispatcher
                         <span class="skill">C C++</span>
                     </span>
-                    Enhanced efficiency by optimizing and developing a network dispatcher and packet analyzer for 4G
-                    networks in C and C++, resulting in a <b>25% reduction in CPU usage.</b>
+                    Developed a high-performance network dispatcher and packet analyzer tailored for 4G/LTE environments, decreasing processing workload by 25% and accelerating research throughput.
                 </li>
 
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
-                        Cellular Research Work
-                        <span class="skill">C C++ Wireshark</span>
+                        Mobile-IoT Security and perfomance Research
+                        <span class="skill">C C++ Python</span>
                     </span>
-                    Conducted experiments on identifying vulnerabilities in Mobile-IoT devices using C, C++, and
-                    Wireshark.
-                    Contributed to a research paper on enabling traffic shaping in MEC platforms, leading to paper
-                    acceptance at <a href="https://dl.acm.org/doi/10.1145/3447993.3483239" target="_blank"
-                        class="content-link">MobiCom'21</a> and <a
-                        href="https://dl.acm.org/doi/10.1109/CCNC49033.2022.9700715" target="_blank"
-                        class="content-link">CCNC'22</a>.
+                    Identified and mitigated security vulnerabilities in Mobile-IoT devices, co-authored a research paper published at <a href="https://dl.acm.org/doi/10.1145/3447993.3483239" target="_blank" class="content-link">MobiCom'21</a>; co-authored a follow-up MEC traffic-shaping study accepted at <a href="https://dl.acm.org/doi/10.1109/CCNC49033.2022.9700715" target="_blank" class="content-link">CCNC'22</a>.
                 </li>
 
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
-                        Fault tolerance Mesh Systems
-                        <span class="skill">BASH Python Docker</span>
-                    </span>Designed and implemented a Dual Controller Mesh System using Shell, Python, and Docker.
-                    Integrated with POS, Wifi, and Surveillance systems, enabling automatic detection and recovery for a
-                    stable and secure network service.
+                        Fault tolerance mesh system
+                        <span class="skill">Python Docker</span>
+                    </span>Architected a fault-tolerant wireless mesh network with distributed virtual controllers and proactive health monitoring, minimizing downtime to a measured 10-ms recovery window.
                 </li>
             </ul>
         </div>
@@ -250,51 +240,20 @@
             </span>
 
             <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
-                <a href="https://github.com/fchsieh/HPC-Accelerators" target="_blank" class="project-link">HPC
-                    Accelerators</a>
+                <a href="https://github.com/fuchengh/HPC-Accelerators/tree/main/Project%201" target="_blank" class="project-link">Thermal Simulation Accelerator</a>
+                <span class="skill">C++</span>
+            </p>
+            <ul style="margin-top: 0.3rem; list-style-type: circle;">
+                <li class="content is-marginless">High-Performance Simulation Engine: Engineered a C++ thermal simulation engine employing SIMD vectorization and cache-oblivious algorithms, achieving a <b>140x</b> speedup and a <b>30%</b> fewer cache misses; ranked <b>top-5</b> in a benchmarking contest.</li>
+            </ul>
+            <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
+                <a href="https://github.com/fuchengh/HPC-Accelerators/tree/main/Project%202" target="_blank" class="project-link">Neural Network FPGA Accelerator</a>
                 <span class="skill">C++ Bluespec</span>
             </p>
             <ul style="margin-top: 0.3rem; list-style-type: circle;">
                 <li class="content is-marginless">
-                    Developed a Cache Oblivious thermal simulation accelerator using C++ and
-                    optimization techniques, including SIMD vectorization and multithreading. Successfully
-                    <b>reduced cache misses by 30%</b>, resulting in an
-                    exceptional
-                    <b>140x</b> execution time boost, earning a <b>Top 5 position</b> in the competition.
+                    FPGA Acceleration: Designed and implemented a highly parallel HDL-based accelerator for image processing, achieving a <b>20x</b> performance gain over CPU baselines.
                 </li>
-                <li class="content is-marginless">
-                    Implemented a cutting-edge, highly parallelized Convolution Neural Network
-                    (CNN) accelerator using Bluespec (HDL) for image processing. Achieved an impressive <b>20x</b>
-                    faster performance compared to traditional CPUs.
-                </li>
-            </ul>
-            <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
-                <a href="https://github.com/fchsieh/job-agg" target="_blank" class="project-link">Job Aggregator</a>
-                <span class="skill">Golang Python React Docker</span>
-            </p>
-            <ul style="margin-top: 0.3rem; list-style-type: circle;">
-                <li class="content is-marginless">Developed a robust web application using
-                    Python for scraping job postings from
-                    diverse websites, Golang for the API server, and React for the frontend.</li>
-                <li class="content is-marginless"> Utilized Docker for containerization and
-                    deployed the application with docker-compose, incorporating
-                    load balancing for enhanced scalability and reliability.</li>
-                <li class="content is-marginless">Designed the Go server to dynamically
-                    interact with MongoDB and Firebase, ensuring efficient
-                    fetching of new data as needed.</li>
-            </ul>
-            <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
-                <a href="https://github.com/fchsieh/BlueSense" target="_blank" class="project-link">BlueSense</a>
-                <span class="skill">Rust Bluetooth</span>
-            </p>
-            <ul style="margin-top: 0.3rem; list-style-type: circle;">
-                <li class="content is-marginless">Designed and successfully launched
-                    BlueSense, a robust device tracking application. Utilized Rust programming language and harnessed
-                    the power of the Bluetooth Low Energy protocol to achieve precise and real-time device detection.
-                </li>
-                <li class="content is-marginless">Implemented an Least Recently Used (LRU)
-                    cache strategy to optimize data storage, significantly improving the overall performance of the
-                    device tracking app. </li>
             </ul>
         </div>
         <hr class="solid">
@@ -303,21 +262,26 @@
             <span class="heading">
                 <h1 class="h1-style">Skills</h1>
             </span>
-            <p class="heading is-marginless project">Languages and frameworks</p>
+            <p class="heading is-marginless project">Languages</p>
             <p class="skill-list">
-                C/C++, Python, JavaScript, Golang, Rust, React, Node.js
+                C, C++, Python, JavaScript, Bash
             </p>
 
-            <p class=" heading is-marginless project">Technologies</p>
+            <p class="heading is-marginless project">Frameworks & Tools</p>
             <p class="skill-list">
-                Git, Docker, Kubernetes, Yang, BLE, Unit testing, System Admin, Firebase, MongoDB
+                React, Enzyme, Cypress, Git, GoogleTest, Docker
+            </p>
+
+            <p class=" heading is-marginless project">Networking & Protocols</p>
+            <p class="skill-list">
+                TCP/IP, Multicast Protocols (PIM, MSDP, TREE-SID, BIER), 4G/LTE dispatchers, packet analysis
             </p>
         </div>
 
         <footer class="footer" style="background: inherit;">
             <div class="content has-text-centered">
                 <p>
-                    <a class="icon" href="https://github.com/fchsieh/web-resume">
+                    <a class="icon" href="https://github.com/fuchengh/web-resume">
                         <i class="fa fa-github"></i>
                     </a>
                     <a class="icon" href="" download="fucheng_hsieh.html">
