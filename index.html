@@ -117,7 +117,7 @@
             <div class="level">
                 <p class="is-marginless education">University of California, Irvine
                     <br />
-                    <span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500;">MS, Computer Science
+                    <span class="content is-marginless" style="font-size: 0.9rem; font-weight: 500;">MS in Computer Science</span>
                 </p>
                 <p class="time-and-location">Irvine, CA<br /><span class="content is-marginless">Sept. 2021 - Mar.
                         2023</span></p>
@@ -158,7 +158,7 @@
                         MSDP to SR Linux Migration
                         <span class="skill">C C++ YANG</span>
                     </span>
-                    Ported legacy C/C++ MSDP SROS code to SR Linux, using POSIX message-queues and Google Protobuf interfaces; built the MSDP Manager CLI & configuration database with 94% line/95% function test coverage.
+                    Ported legacy C/C++ MSDP (SROS) to SR Linux, implementing POSIX message queues and Protobuf-based interfaces, and built the MSDP Manager (CLI + configuration database) to deliver full MSDP on SR Linux. Authored a comprehensive unit test suite (94% line coverage, 95% function coverage).
                 </li>
 
                 <li class="content is-marginless">
@@ -166,7 +166,7 @@
                         TREE-SID SRv6 Integration
                         <span class="skill">C C++ YANG</span>
                     </span>
-                    Integrated TREE-SID SRv6 control plane with existing PIM tunnels via "end-to-end" CLI-to-database workflow; introduced a transactional tunnel-request database that synchronizes active/standby control planes, eliminating a "long-standing" switchover-crash bug.
+                    Integrated TREE-SID SRv6 control plane with existing PIM tunnels via an end-to-end CLI-to-database workflow; introduced a transactional tunnel-request database that synchronizes active/standby control planes for high availability and consistency.
                 </li>
 
                 <li class="content is-marginless">
@@ -174,7 +174,7 @@
                         BIER MPLS common-label support
                         <span class="skill">C C++ YANG</span>
                     </span>
-                    Implemented CLI and label allocation database to assign unique service MPLS-labels per VPRN and propagate labels through PIM tunnels, enabling scalable MVPN BIER deployments.
+                    Implemented CLI and a label-allocation database to assign unique service MPLS labels per VPRN and propagate labels through PIM tunnels, enabling scalable MVPN BIER deployments.
                 </li>
             </ul>
 
@@ -189,7 +189,7 @@
                     <span class="heading is-marginless project">
                         Multi-label selector for AI
                         <span class="skill">React TypeScript</span>
-                    </span>Architected a scalable, modular React application to efficiently curate and filter large datasets for Watson AI model training; designed reusable TypeScript components, ensuring maintainability and ease of future enhancements.
+                    </span>Architected a modular React application to efficiently curate and filter large datasets for Watson AI model training; designed reusable TypeScript components, ensuring maintainability and ease of future enhancements.
                 </li>
 
                 <li class="content is-marginless">
@@ -197,7 +197,7 @@
                         Automated Testing
                         <span class="skill">React TypeScript</span>
                     </span>
-                    Wrote comprehensive unit and end-to-end tests (Enzyme, Cypress), boosted automated test coverage and cut critical pre-release regressions by ~50% function coverage.
+                    Wrote comprehensive unit and end-to-end tests (Enzyme, Cypress), increased automated coverage to ~50% function coverage and reduced critical pre-release regressions.
                 </li>
             </ul>
 
@@ -213,23 +213,31 @@
                         High Performance 4G/LTE Packet Dispatcher
                         <span class="skill">C C++</span>
                     </span>
-                    Developed a high-performance network dispatcher and packet analyzer tailored for 4G/LTE environments, decreasing processing workload by 25% and accelerating research throughput.
+                    Built a high-performance network dispatcher and packet analyzer for 4G/LTE, reducing processing workload by 25% and accelerating research throughput.
                 </li>
 
                 <li class="content is-marginless">
-                    <span class="heading is-marginless project">
-                        Mobile-IoT Security and perfomance Research
-                        <span class="skill">C C++ Python</span>
-                    </span>
-                    Identified and mitigated security vulnerabilities in Mobile-IoT devices; co-authored a research paper published at <a href="https://dl.acm.org/doi/10.1145/3447993.3483239" target="_blank" class="content-link">MobiCom'21</a>
-                     and a follow-up study on MEC traffic shaping accepted at <a href="https://dl.acm.org/doi/10.1109/CCNC49033.2022.9700715" target="_blank" class="content-link">CCNC'22</a>.
+                <span class="heading is-marginless project">
+                    4G/IoT Security Research
+                </span>
+                Identified security weaknesses in 4G mobile-IoT devices; co-authored a paper at
+                <a href="https://dl.acm.org/doi/10.1145/3447993.3483239" target="_blank" class="content-link">MobiCom '21</a>.
+                </li>
+
+                <li class="content is-marginless">
+                <span class="heading is-marginless project">
+                    MEC Traffic Prioritization
+                </span>
+                Designed a method to shape and prioritize edge-bound traffic for MEC applications under load; published at
+                <a href="https://dl.acm.org/doi/10.1109/CCNC49033.2022.9700715" target="_blank" class="content-link">CCNC '22</a>.
                 </li>
 
                 <li class="content is-marginless">
                     <span class="heading is-marginless project">
                         Fault tolerance mesh system
                         <span class="skill">Python Docker</span>
-                    </span>Architected a fault-tolerant wireless mesh network with distributed virtual controllers and proactive health monitoring, minimizing downtime to a measured 10-ms recovery window.
+                    </span>
+                    Architected a fault-tolerant wireless mesh network with distributed virtual controllers and proactive health monitoring, achieving a measured 10 ms recovery window.
                 </li>
             </ul>
         </div>
@@ -241,19 +249,19 @@
             </span>
 
             <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
-                <a href="https://github.com/fuchengh/HPC-Accelerators/tree/main/Project%201" target="_blank" class="project-link">Thermal Simulation Accelerator</a>
+                <a href="https://github.com/fuchengh/thermal-simulation-program-accelerator" target="_blank" class="project-link">Thermal Simulation Accelerator</a>
                 <span class="skill">C++</span>
             </p>
             <ul style="margin-top: 0.3rem; list-style-type: circle;">
                 <li class="content is-marginless">High-Performance Simulation Engine: Engineered a C++ thermal simulation engine employing SIMD vectorization and cache-oblivious algorithms, achieving a <b>140x</b> speedup and a <b>30%</b> fewer cache misses; ranked <b>top-5</b> in a benchmarking contest.</li>
             </ul>
             <p class="heading is-marginless project" style="font-size: 0.9rem; font-weight: 500;">
-                <a href="https://github.com/fuchengh/HPC-Accelerators/tree/main/Project%202" target="_blank" class="project-link">Neural Network FPGA Accelerator</a>
-                <span class="skill">C++ Bluespec</span>
+                <a href="https://github.com/fuchengh/bitchat-clone" target="_blank" class="project-link">BitChat-Clone</a>
+                <span class="skill">C++ python</span>
             </p>
             <ul style="margin-top: 0.3rem; list-style-type: circle;">
                 <li class="content is-marginless">
-                    FPGA Acceleration: Designed and implemented a highly parallel HDL-based accelerator for image processing, achieving a <b>20x</b> performance gain over CPU baselines.
+                Designed and built a BLE chat system: <b>BlueZ-based transport/protocol</b> (scan/connect, notify/write, link-ready), <b>shared-key security</b>, and a <b>daemon + CLI + chat TUI</b>; service-UUID discovery with HELLO user IDs; supports 1:1 and 1:many messaging.
                 </li>
             </ul>
         </div>
